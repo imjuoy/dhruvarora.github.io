@@ -2,4 +2,4 @@
 _site
 
 # Ignore junk files
-.DS_Store
+.DS_Store.sketch

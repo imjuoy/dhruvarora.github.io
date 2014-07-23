@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        none
+
+# Setup
+title:            "Dhruv Arora, Software Developer"
+tagline:          ''
+description:      'Hacker, Computer Science, Developer, Berkeley, Designer, EECS, JavaScript'
+url:              http://arora.io
+baseurl:          '/'
+paginate:         10
+port:             8888
+
+author:
+  name:           'Dhruv Arora'
+  url:            http://arora.io
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/dhruvarora/dhruvarora.github.io
