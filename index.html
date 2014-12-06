@@ -1,33 +1,47 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html> 
+<html lang='en'> 
+<head> 
+  <meta charset='UTF-8' /> 
+  <title>Dhruv Arora | Software Engineer</title> 
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='css/style.css' />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300'
+  rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    <span class="menu-post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+  <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
+  <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+  <script type='text/javascript' src='js/index.js'></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-44717805-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body>
+  <div id='particles'>
+    <div class='intro'>
+      <h1 id='greeting'>Hi, I'm Dhruv</h1>
+      <div id='about'>
+        <p>I'm a software engineer with a passion for web design studying
+        at the <a href = 'http://berkeley.edu'> University of California, Berkeley</a>.
+        </p> 
+      </div>
+      <div class='links'>
+        <a href='mailto:dhruv@arora.io'><i class='fa fa-envelope-square'></i></a>
+        <a href='http://twitter.com/_dhruvarora'><i class='fa fa-twitter'></i></a>
+        <a href='http://github.com/dhruvarora'><i class='fa fa-github'></i></a>
+        <a href='http://linkedin.com/in/dhruvarora013'><i class='fa fa-linkedin'></i></a>
+        <a href='http://open.spotify.com/user/1235696176'><i class='fa fa-spotify'></i></a>
+      </div>
+    </div>
   </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-
+</body> 
+</html> 
