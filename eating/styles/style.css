@@ -64,6 +64,13 @@ ul {
 	list-style: square;
 	padding-left:1.2em;
 	}
+ul ul {
+	list-style: circle;
+	padding-left:1.2em;
+	}
+ul ul li:last-child {
+  padding-bottom:1em;
+}
 ol {
 	padding-left:1.2em;
 	}
