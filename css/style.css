@@ -54,27 +54,36 @@ a, a:active, a:visited {
   display: inline-block;
 }
 
-.links a {
-  color: #000000;
+.links a span {
+  -webkit-transition: all  ease-in;
+  -webkit-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  transition: all 200ms ease-in;
+	transform: scale(1);
+  opacity: 1;
 }
 
-.links a:hover {
-  color: #fefefe;
-}
-
-.links a:hover:after {
-	-webkit-transform: scale(1.9);
-	-moz-transform: scale(1.9);
-	-ms-transform: scale(1.9);
-	transform: scale(1.9);
-  opacity: 0.3;
+.links a span:hover {
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.3);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.3);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.3);
+  transition: all 200ms ease-in;
+	transform: scale(1.3);
+  opacity: 0.9;
 }
 
 .intro-rect {
   position: absolute;
   margin: auto;
   top: 0; right: 0; bottom: 0; left: 0;
-  height: 180px;
+  height: 190px;
   width: 100%;
   text-align: center;
   display: block;
