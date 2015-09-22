@@ -3,7 +3,7 @@
 var particleSettings = {
   "particles": {
     "number": {
-      "value": 130,
+      "value": 90,
       "density": {
         "enable": true,
         "value_area": 400
@@ -56,7 +56,7 @@ var particleSettings = {
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 10,
       "direction": "none",
       "random": false,
       "straight": false,
