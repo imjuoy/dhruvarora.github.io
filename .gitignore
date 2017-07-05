@@ -7,3 +7,4 @@ food/scripts
 gulpfile.js
 node_modules/
 package.json
+*.DS_Store*
